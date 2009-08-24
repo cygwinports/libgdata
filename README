@@ -1,0 +1,60 @@
+libgdata
+------------------------------------------
+libgdata is a GLib-based library for accessing online service APIs using 
+the GData protocol -- most notably, Google's services. It provides APIs 
+to access the common Google services, and has full asynchronous support.
+
+Runtime requirements:
+  cygwin-1.7.0-60
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.4-1
+  libsoup2.4_1-2.26.3-1
+  libxml2-2.7.3-11
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.64-10
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.9-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  gnome-common-2.26.0-2
+  gtk-doc-1.11-2
+  libtool-2.2.7a-14
+  make-3.81-2
+  pkg-config-0.23b-10
+  sed-4.1.5-2
+
+Canonical website:
+  http://live.gnome.org/libgdata
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/libgdata/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libgdata-0.4.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libgdata-0.4.0-X.cygport all
+
+This will create:
+  /usr/src/libgdata-0.4.0-X-src.tar.bz2
+  /usr/src/libgdata-common-0.4.0-X.tar.bz2
+  /usr/src/libgdata-devel-0.4.0-X.tar.bz2
+  /usr/src/libgdata5-0.4.0-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 0.4.0-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

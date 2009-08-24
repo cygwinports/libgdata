@@ -1,0 +1,7 @@
+category: Gnome Net
+external-source: libgdata
+sdesc: "GLib Google services library (data)"
+ldesc: "libgdata is a GLib-based library for accessing online service 
+APIs using the GData protocol -- most notably, Google's services. It 
+provides APIs to access the common Google services, and has full 
+asynchronous support."
