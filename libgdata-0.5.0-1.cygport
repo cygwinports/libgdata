@@ -3,10 +3,8 @@ inherit gnome2
 DESCRIPTION="GLib Google services library"
 HOMEPAGE="http://live.gnome.org/libgdata"
 
-PATCH_URI="0.4.0-no-undefined.patch"
-
-PKG_NAMES="${PN} ${PN}5 ${PN}-common ${PN}-devel"
-libgdata5_CONTENTS="usr/bin/cyggdata-5.dll"
+PKG_NAMES="${PN} ${PN}6 ${PN}-common ${PN}-devel"
+libgdata6_CONTENTS="usr/bin/cyggdata-6.dll"
 libgdata_common_CONTENTS="usr/share/doc/ usr/share/locale/"
 libgdata_devel_CONTENTS="usr/include/ usr/lib/ usr/share/gtk-doc/"
 
