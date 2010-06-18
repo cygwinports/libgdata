@@ -1,7 +1,7 @@
 category: Gnome Net
-requires: libgdata7 libglib2.0-devel libsoup2.4-devel libsoup-gnome2.4-devel libxml2-devel
+requires: girepository-GLib2.0 girepository-Soup2.4 girepository-x11 libgdata7
 external-source: libgdata
-sdesc: "GLib Google services library (development)"
+sdesc: "GLib Google services library (GObject Introspection data)"
 ldesc: "libgdata is a GLib-based library for accessing online service 
 APIs using the GData protocol -- most notably, Google's services. It 
 provides APIs to access the common Google services, and has full 

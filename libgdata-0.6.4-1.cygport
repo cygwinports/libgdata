@@ -1,0 +1,12 @@
+inherit gnome2
+
+DESCRIPTION="GLib Google services library"
+HOMEPAGE="http://live.gnome.org/libgdata"
+
+PKG_NAMES="${PN} ${PN}7 ${PN}-common ${PN}-devel girepository-GData0.0"
+libgdata7_CONTENTS="usr/bin/cyggdata-7.dll"
+libgdata_common_CONTENTS="usr/share/doc/ usr/share/locale/"
+libgdata_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/ usr/share/gtk-doc/"
+girepository_GData0_0_CONTENTS="usr/*/gir*/GData-0.0.*"
+
+DIFF_EXCLUDES="gdata.types"
