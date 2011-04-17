@@ -1,0 +1,12 @@
+--- origsrc/libgdata-0.8.0/gdata/gdata.symbols	2010-12-21 11:56:32.000000000 -0600
++++ src/libgdata-0.8.0/gdata/gdata.symbols	2011-04-17 01:39:05.477865400 -0500
+@@ -654,9 +654,6 @@ gdata_documents_query_get_reader_address
+ gdata_documents_query_add_reader
+ gdata_documents_query_add_collaborator
+ gdata_documents_service_error_get_type
+-gdata_documents_text_format_get_type
+-gdata_documents_presentation_format_get_type
+-gdata_documents_spreadsheet_format_get_type
+ gdata_download_stream_get_type
+ gdata_download_stream_new
+ gdata_download_stream_get_service
