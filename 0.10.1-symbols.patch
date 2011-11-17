@@ -1,0 +1,10 @@
+--- origsrc/libgdata-0.10.1/gdata/gdata.symbols	2011-08-15 16:34:20.000000000 -0500
++++ src/libgdata-0.10.1/gdata/gdata.symbols	2011-11-17 02:45:22.030113600 -0600
+@@ -931,7 +931,4 @@ gdata_youtube_comment_get_parent_comment
+ gdata_youtube_comment_set_parent_comment_uri
+ gdata_picasaweb_comment_get_type
+ gdata_picasaweb_comment_new
+-GDATA_YOUTUBE_RATING_TYPE_SIMPLE
+-GDATA_YOUTUBE_RATING_TYPE_MPAA
+-GDATA_YOUTUBE_RATING_TYPE_V_CHIP
+ gdata_youtube_video_get_media_rating

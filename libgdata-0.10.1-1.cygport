@@ -3,10 +3,15 @@ inherit gnome2
 DESCRIPTION="GLib Google services library"
 HOMEPAGE="http://live.gnome.org/libgdata"
 
-PATCH_URI="0.8.0-symbols.patch"
+PATCH_URI="0.10.1-symbols.patch"
 
-PKG_NAMES="${PN}11 ${PN}-common ${PN}-devel girepository-GData0.0"
-libgdata11_CONTENTS="usr/bin/cyggdata-11.dll"
+DEPEND="gnome-common gtk-doc
+	girepository(Soup-2.4)
+	pkgconfig(libsoup-gnome-2.4)
+	pkgconfig(oauth)"
+
+PKG_NAMES="${PN}13 ${PN}-common ${PN}-devel girepository-GData0.0"
+libgdata13_CONTENTS="usr/bin/cyggdata-13.dll"
 libgdata_common_CONTENTS="usr/share/doc/ usr/share/locale/"
 libgdata_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/ usr/share/gtk-doc/"
 girepository_GData0_0_CONTENTS="usr/*/gir*/GData-0.0.*"

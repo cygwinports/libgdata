@@ -1,5 +1,5 @@
 category: Gnome Net
-requires: girepository-GLib2.0 girepository-Soup2.4 girepository-x11 libgdata11
+requires: girepository-GLib2.0 girepository-Soup2.4 girepository-x11 libgdata13
 external-source: libgdata
 sdesc: "GLib Google services library (GObject Introspection data)"
 ldesc: "libgdata is a GLib-based library for accessing online service 
