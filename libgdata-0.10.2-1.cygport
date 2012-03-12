@@ -3,8 +3,6 @@ inherit gnome2
 DESCRIPTION="GLib Google services library"
 HOMEPAGE="http://live.gnome.org/libgdata"
 
-PATCH_URI="0.10.1-symbols.patch"
-
 DEPEND="gnome-common gtk-doc
 	girepository(Soup-2.4)
 	pkgconfig(libsoup-gnome-2.4)
@@ -17,3 +15,5 @@ libgdata_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/ usr/share/gtk-doc/
 girepository_GData0_0_CONTENTS="usr/*/gir*/GData-0.0.*"
 
 DIFF_EXCLUDES="gdata.types"
+
+CYGCONF_ARGS="--with-ca-certs=/usr/ssl/certs/ca-bundle.crt"
