@@ -1,8 +1,0 @@
-category: Gnome Net
-requires: libgdata13 libglib2.0-devel liboauth-devel libsoup2.4-devel libsoup-gnome2.4-devel libxml2-devel
-external-source: libgdata
-sdesc: "GLib Google services library (development)"
-ldesc: "libgdata is a GLib-based library for accessing online service 
-APIs using the GData protocol -- most notably, Google's services. It 
-provides APIs to access the common Google services, and has full 
-asynchronous support."

@@ -1,6 +1,13 @@
 inherit gnome2
 
-DESCRIPTION="GLib Google services library"
+NAME="libgdata"
+VERSION=0.13.2
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="GObject Google services library"
+DESCRIPTION="libgdata is a GLib-based library for accessing online service APIs
+using the GData protocol -- most notably, Google's services. It provides APIs
+to access the common Google services, and has full asynchronous support."
 HOMEPAGE="http://live.gnome.org/libgdata"
 
 DEPEND="gnome-common gtk-doc
@@ -9,6 +16,7 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(oauth)"
 
 PKG_NAMES="${PN}13 ${PN}-common ${PN}-devel girepository-GData0.0"
+libgdata13_REQUIRES="ca-certificates libgdata-common"
 libgdata13_CONTENTS="usr/bin/cyggdata-13.dll"
 libgdata_common_CONTENTS="usr/share/doc/ usr/share/locale/"
 libgdata_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/ usr/share/gtk-doc/"
