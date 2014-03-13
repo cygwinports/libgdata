@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="libgdata"
-VERSION=0.13.4
+VERSION=0.14.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GObject Google services library"
@@ -15,11 +15,13 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(libsoup-gnome-2.4)
 	pkgconfig(oauth)"
 
-PKG_NAMES="${NAME}13 ${NAME}-common ${NAME}-devel girepository-GData0.0 vala-libgdata"
+PKG_NAMES="${NAME}13 ${NAME}-common ${NAME}-devel ${NAME}-doc girepository-GData0.0 vala-libgdata"
 libgdata13_REQUIRES="ca-certificates libgdata-common"
 libgdata13_CONTENTS="usr/bin/cyggdata-13.dll"
 libgdata_common_CONTENTS="usr/share/doc/ usr/share/locale/"
-libgdata_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/ usr/share/gtk-doc/"
+libgdata_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/"
+libgdata_doc_CATEGORY="Doc"
+libgdata_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_GData0_0_CONTENTS="usr/*/gir*/GData-0.0.*"
 vala_libgdata_CONTENTS="usr/share/vala/vapi/libgdata.*"
 
