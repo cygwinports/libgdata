@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="libgdata"
-VERSION=0.16.1
+VERSION=0.17.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GObject Google services library"
@@ -10,17 +10,16 @@ using the GData protocol -- most notably, Google's services. It provides APIs
 to access the common Google services, and has full asynchronous support."
 HOMEPAGE="http://live.gnome.org/libgdata"
 
-PATCH_URI="0.16.1-symbols.patch"
-
 DEPEND="gnome-common gtk-doc
 	girepository(Soup-2.4)
 	pkgconfig(libsoup-2.4)
 	pkgconfig(oauth)"
 
-PKG_NAMES="${NAME}19 ${NAME}-common ${NAME}-devel ${NAME}-doc girepository-GData0.0 vala-libgdata"
-libgdata19_REQUIRES="ca-certificates libgdata-common"
-libgdata19_CONTENTS="usr/bin/cyggdata-19.dll"
+PKG_NAMES="${NAME}22 ${NAME}-common ${NAME}-devel ${NAME}-doc girepository-GData0.0 vala-libgdata"
+libgdata22_REQUIRES="ca-certificates libgdata-common"
+libgdata22_CONTENTS="usr/bin/cyggdata-22.dll"
 libgdata_common_CONTENTS="usr/share/doc/ usr/share/locale/"
+libgdata_devel_REQUIRES="girepository-GData0.0 vala-libgdata"
 libgdata_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/"
 libgdata_doc_CATEGORY="Doc"
 libgdata_doc_CONTENTS="usr/share/gtk-doc/"
@@ -29,4 +28,4 @@ vala_libgdata_CONTENTS="usr/share/vala/vapi/libgdata.*"
 
 DIFF_EXCLUDES="gdata.types"
 
-CYGCONF_ARGS="--with-ca-certs=/etc/pki/tls/certs/ca-bundle.crt --disable-tests"
+CYGCONF_ARGS="--with-ca-certs=/etc/pki/tls/certs/ca-bundle.crt --disable-always-build-tests"
